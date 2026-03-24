@@ -1,23 +1,36 @@
-# Homebrew Tap for Moat
+# Homebrew Tap
 
-Install [Moat](https://majorcontext.com/moat) via Homebrew.
+Install [Major Context](https://majorcontext.com) tools via Homebrew.
 
 ## Install
 
 ```bash
-brew tap majorcontext/moat
+brew tap majorcontext/tap
+```
+
+### Moat
+
+Run AI agents in isolated containers with credential injection and full observability.
+
+```bash
 brew install moat
+```
+
+### Keep
+
+API-level policy engine for AI agents. Deny, redact, or log — before the call reaches the API.
+
+```bash
+brew install keep
 ```
 
 ## Update
 
 ```bash
 brew update
-brew upgrade moat
+brew upgrade moat keep
 ```
 
 ## About
 
-Moat runs AI agents in isolated containers with credential injection and full observability.
-
-The formula in this tap is automatically updated by [GoReleaser](https://goreleaser.com/) on each release.
+The formulas in this tap are automatically updated by [GoReleaser](https://goreleaser.com/) on each release.
