@@ -5,13 +5,13 @@
 class Keep < Formula
   desc "Policy engine for AI agent tool calls"
   homepage "https://majorcontext.com/keep"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/majorcontext/keep/releases/download/v0.1.0/keep_0.1.0_darwin_amd64.tar.gz"
-      sha256 "386a4c0ee7225b834b3ecc0eb2d743021561101287dd3ab843030e5a365b6e57"
+      url "https://github.com/majorcontext/keep/releases/download/v0.2.0/keep_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b1c9abc77d289defb43a5b07fb9a205f87cea7eb939d5107ab051db95bf72dc8"
 
       define_method(:install) do
         bin.install "keep"
@@ -20,8 +20,8 @@ class Keep < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/majorcontext/keep/releases/download/v0.1.0/keep_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4ce6b891acd96a2203d2bf8038161d65cb8cc059b5a9a231711feec8ab1534e8"
+      url "https://github.com/majorcontext/keep/releases/download/v0.2.0/keep_0.2.0_darwin_arm64.tar.gz"
+      sha256 "716857e36cc62eb37a60203f58fe17d1c9072903d1bc05b0ac4f0b3cd70ffe59"
 
       define_method(:install) do
         bin.install "keep"
@@ -33,8 +33,8 @@ class Keep < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/majorcontext/keep/releases/download/v0.1.0/keep_0.1.0_linux_amd64.tar.gz"
-      sha256 "370c3c57084df2b771286fb66d4ef483642bd91ca057d3dd94baa80f01edab5e"
+      url "https://github.com/majorcontext/keep/releases/download/v0.2.0/keep_0.2.0_linux_amd64.tar.gz"
+      sha256 "bedb650616793c80666f78a321c648a4d69266a646adfa240d04031c7019eba0"
       define_method(:install) do
         bin.install "keep"
         bin.install "keep-mcp-relay"
@@ -42,8 +42,8 @@ class Keep < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/majorcontext/keep/releases/download/v0.1.0/keep_0.1.0_linux_arm64.tar.gz"
-      sha256 "a31fbe8f35db285f7bee7fb878b7d0d3b29a4a3b15cc3f1b6280a3c07f4343b7"
+      url "https://github.com/majorcontext/keep/releases/download/v0.2.0/keep_0.2.0_linux_arm64.tar.gz"
+      sha256 "1a603626f1e50255af195f366d4ed6ea233a51005ed8686b7cebd73c3bdd87ba"
       define_method(:install) do
         bin.install "keep"
         bin.install "keep-mcp-relay"
