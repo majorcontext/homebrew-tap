@@ -5,21 +5,21 @@
 class Moat < Formula
   desc "Run AI agents in isolated containers with credential injection and full observability"
   homepage "https://majorcontext.com/moat"
-  version "0.8.2"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/majorcontext/moat/releases/download/v0.8.2/moat_0.8.2_darwin_amd64.tar.gz"
-      sha256 "6753791838035c6b9a47c3580871f6d6a5e0a3fa7b4dbdd626cb681ad5ef8771"
+      url "https://github.com/majorcontext/moat/releases/download/v0.9.0/moat_0.9.0_darwin_amd64.tar.gz"
+      sha256 "07a6a411518842a1830c6f56c3ab71483ab1b7c34acc1d5804fc269f2e243c84"
 
       define_method(:install) do
         bin.install "moat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/majorcontext/moat/releases/download/v0.8.2/moat_0.8.2_darwin_arm64.tar.gz"
-      sha256 "4fe585bfc214c437aa35fd77c95c950f771706fc328877d6ab307f46c5406aa6"
+      url "https://github.com/majorcontext/moat/releases/download/v0.9.0/moat_0.9.0_darwin_arm64.tar.gz"
+      sha256 "69e332c6666023b12612ea0fc4fa3348adc4f9cd25f910fd4f93ce8570dca791"
 
       define_method(:install) do
         bin.install "moat"
@@ -29,15 +29,15 @@ class Moat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/majorcontext/moat/releases/download/v0.8.2/moat_0.8.2_linux_amd64.tar.gz"
-      sha256 "3892ae1c5d074d356309fc5144e2cf95e9ad7a0b660f389575a5b45c78f9f934"
+      url "https://github.com/majorcontext/moat/releases/download/v0.9.0/moat_0.9.0_linux_amd64.tar.gz"
+      sha256 "370962b65f950f8c0cbe1f7f296102f40f3c86fd4288f778b76621e3aadf4dba"
       define_method(:install) do
         bin.install "moat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/majorcontext/moat/releases/download/v0.8.2/moat_0.8.2_linux_arm64.tar.gz"
-      sha256 "a7faa142320c8a79b7947ebd585aa706171396774b425289d85f0cbf6b99fbfa"
+      url "https://github.com/majorcontext/moat/releases/download/v0.9.0/moat_0.9.0_linux_arm64.tar.gz"
+      sha256 "c3b50ef7e244bf360496644c68ccaba78bd58813d4d6b040f09096f62fda2006"
       define_method(:install) do
         bin.install "moat"
       end
